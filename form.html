@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+<!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+<!-- font-awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- light-box -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <!-- style -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bootstrap Theme</title>
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" id="home">
+    <!-- <div class="spinner">  
+        <div class="scaling-squares-spinner" :style="spinnerStyle">
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+        </div>
+      </div>  -->
+      <!-- start navbar -->
+    <nav class="navbar 
+    navbar-expand-lg
+    navbar-light
+    fixed-top
+    position-fixed
+    navbar-fixed-top" id="nav">
+    <div class="container">
+        <a class="navbar-brand text-light mr-auto " href="#">
+            <!-- <h1 class="mr-auto">LIFETRAKER</h1>
+            <p>App Landing Page</p> -->
+            <img src="./img/logo.png" alt="">
+        </a>
+        
+        <button 
+        class="navbar-toggler ml-auto" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+            <span class=" "><i class="fa fa-bars fa-2x text-light"></i></span>
+          </button>
+        
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav  first-ul ml-auto " id="main-nav">
+            <li class="nav-item  mr-3">
+                <a class="nav-link  active " href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mr-3">
+                <a class="nav-link " href="#skills">About</a>
+            </li>
+                <li class="nav-item mr-3" >
+                <a class="nav-link " href="#features">Features</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link " href="#screenshots">screenshots</a>
+                    </li>
+                <li class="nav-item mr-3">
+                <a class="nav-link " href="#team">team</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link " href="#contact">contact</a>
+                    </li>
+    
+            </ul>
+            
+            
+        </div>
+    </div>
+    
+
+    </nav>
+    
+    <!-- form -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Check me out
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-block btn-pink">Sign in</button>
+                  </form>
+            </div>
+           
+        </div>
+    </div>
+    
+    <!-- footer  -->
+<footer class="main-footer py-3" id="mainFooter">
+    <div class="container">
+        <div class="row pt-5  pb-3 d-flex justofy-content-center">
+            <div class="mr-auto mb-3 text-light  footer-social ">
+                <a href="#home">
+                    <img src="./img/logo.png" class=" mb-4"  calt="">
+                </a>
+                
+            <!-- <h1 class="mb-0 "><a href="#" class="text-light">LIFETRAKER</a></h1>
+            <p class="text-uppercase lead footer-p ">App Landing Page</p> -->
+            </div>
+            <div class="ml-auto align-self-center footer-social mb-4">
+                <a href="http://www.facebook.com" class="rounded-circle p-3 mr-2  bg-light text-muted"><i class="fab fa-facebook-square "></i></a>
+                <a href="http://www.twitter.com" class="rounded-circle p-3 mr-2 bg-light text-muted"><i class="fab fa-twitter "></i></a>
+                <a href="http://www.instagram.com" class="rounded-circle p-3 mr-2 bg-light text-muted"><i class="fab fa-instagram "></i></a>
+                <a href="http://www.linkedin.com" class="rounded-circle p-3 mr-2 bg-light text-muted"><i class="fab fa-linkedin "></i></a>
+            </div>
+        </div>
+        <div class="row pb-3">
+            <div class="mr-auto text-light ">
+            
+            <p class="text-uppercase lead">@2020 Reham All Rights Reserved</p>
+            </div>
+            <div class="ml-auto footer-social ">
+                <a href="#skills" class="rounded-circle p-md-3 mr-md-2 mx-1 text-uppercase  text-light">About</a>
+                <a href="#team" class="rounded-circle p-md-3 mr-md-2 mx-1 text-uppercase text-light">Team</a>
+                <a href="#contact" class="rounded-circle p-md-3   text-uppercase text-light">Contact</a>
+                
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+<!-- query -->
+      <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+      <!-- bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+      <!-- lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+   
+  </body>
+  
+  </html>

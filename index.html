@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- light-box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap Theme</title>
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" id="home">
+    <div class="spinner">
+        <div class="scaling-squares-spinner" :style="spinnerStyle">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+    <!-- start navbar -->
+    <nav class="navbar 
+    navbar-expand-lg
+    navbar-light
+    fixed-top
+    position-fixed
+    navbar-fixed-top" id="nav">
+        <div class="container">
+            <a class="navbar-brand text-light mr-auto " href="#">
+                <!-- <h1 class="mr-auto">LIFETRAKER</h1>
+            <p>App Landing Page</p> -->
+                <img src="./img/logo.png" alt="">
+            </a>
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class=" "><i class="fa fa-bars fa-2x text-light"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav  first-ul ml-auto " id="main-nav">
+                    <li class="nav-item  mr-3">
+                        <a class="nav-link  active " href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link " href="#skills">About</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link " href="#features">Features</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link " href="#screenshots">screenshots</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link " href="#team">team</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link " href="#contact">contact</a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- header section -->
+    <header id="main-header" class="header   py-5">
+
+        <div class="container">
+            <div class="row">
+                <div class="  col-md-7   d-flex flex-column justify-content-center ">
+                    <h2 class="header-title display-3 text-uppercase">Amazing App Best For Business</h2>
+                    <p class="my-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <div class="d-flex justify-content-center mt-5 app-badge">
+                        <img src="./img/app-badge/app-store.png" class="mr-md-3 " alt="">
+                        <img src="./img/app-badge/google-play.png" alt="">
+
+
+                    </div>
+
+                </div>
+                <div class="col-md-5  d-flex flex-column justify-content-center align-items-center mb-5">
+                    <img src="./img/phones/iphone-banner.png " class="my-5 header-" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- skills  section-->
+    <section id="skills" class="skills pb-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6  d-flex  justify-content-center align-items-center ">
+                    <img src="./img/phones/iphone-feature.png" alt="" class="">
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="dark d-flex p-4 my-3">
+                        <div>
+                            <i class="fa fa-sticky-note fa-2x mr-5" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h2 class="transform-cap">Creative Description</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae, velit totam
+                                tempora aspernatur perferendis.</p>
+                        </div>
+                    </div>
+                    <div class="light d-flex p-4 mb-3">
+                        <div>
+                            <i class="fa fa-globe fa-2x mr-5" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h2>Creative Description</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae, velit totam
+                                tempora aspernatur perferendis.</p>
+                        </div>
+                    </div>
+                    <div class="dark d-flex p-4 mb-3">
+                        <div>
+                            <i class="fa fa-tripadvisor fa-2x mr-5" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h2>Creative Description</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae, velit totam
+                                tempora aspernatur perferendis.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- features section -->
+    <section id="features" class="py-5 my-5 features">
+        <div class="container py-4">
+            <h2 class="heading-h text-center display-3">App features</h2>
+            <p class="   text-center my-5 b-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quidem harum
+                neque minus perspiciatis minima ducimus doloribus, sed aut architecto.</p>
+            <div class="features-content">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4 text-center">
+                        <div class="mb-3 p-2">
+                            <i class="far fa-comment-dots fa-3x my-4"></i>
+                            <h4 class="text-uppercase">Full Free Chat </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aperiam ipsa nulla
+                                sint exercitationem nemo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 text-center text-lg-right">
+                        <div class="mb-3 p-2">
+                            <i class="far fa-sticky-note fa-3x my-4"></i>
+                            <h4 class="text-uppercase">Beautiful Inter Design </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aperiam ipsa nulla
+                                sint exercitationem nemo.</p>
+                        </div>
+                        <div class="mb-3 p-2">
+                            <i class="fa fa-space-shuttle fa-3x my-4"></i>
+                            <h4 class="text-uppercase">Unlimited Features </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aperiam ipsa nulla
+                                sint exercitationem nemo.</p>
+                        </div>
+                    </div>
+                    <!-- pink part -->
+
+                    <div class="col-lg-4">
+                        <div class="mb-3 second"><img src="./img/phones/i-phone-screen.png" alt="" class="w-100 h-100 ">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 text-center text-lg-left">
+                        <div class="mb-3 p-2">
+                            <i class="fal fa-calendar-alt fa-3x my-4 prim"></i>
+                            <h4 class="text-uppercase">Reating Ready Graphics </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aperiam ipsa nulla
+                                sint exercitationem nemo.</p>
+                        </div>
+                        <div class="mb-3 p-2">
+                            <i class="fas fa-wrench fa-3x my-4 prim"></i>
+                            <h4>Ios And android Version </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aperiam ipsa nulla
+                                sint exercitationem nemo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4">
+                        <div class="mb-3 p-2 text-center">
+                            <i class="fas fa-laptop fa-3x my-4 prim"></i>
+                            <h4 class="text-uppercase">24/7 Support By real people </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aperiam ipsa nulla
+                                sint exercitationem nemo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- VIDEO PLAY -->
+    <section id="screenshots" class="video-play">
+        <div class="video d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col  ">
+                    <div class="container  video-container">
+                        <div class="p-3">
+                            <a href="#" class="video " data-video="https://www.youtube.com/embed/HnwsG9a5riA"
+                                data-toggle="modal" data-target="#videoModal">
+                                <span class="icon">
+                                    <i class="fas fa-play fa-4x  "></i>
+                                </span>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="dark-overlay">
+
+    </section>
+    <!-- VIDEO MODAL -->
+    <div class="modal fade" id="videoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                    <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start plan section -->
+    <section id="plan" class="text-center plan">
+        <div class="container my-5 py-5">
+            <h2 class="heading-h display-3 my-5">Choose Your Subscribe Plan</h2>
+            <p class=" plan-p ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, itaque! Eum tempora
+                consequatur nulla culpa, nisi quis </p>
+            <div class=" my-5 py-5">
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h3 class="card-title font-weight-bold  text-uppercase">Free</h3>
+                                <p class="card-text text-muted"><span class="prim display-4">$0</span>/month</p>
+                                <ul class="list-unstyled py-3">
+                                    <li class="py-2 text-muted">Cras justo odio</li>
+                                    <li class="py-2 text-muted">Dapibus ac facilisis in</li>
+                                    <li class="py-2 text-muted">Vestibulum at eros</li>
+                                    <li class="py-2 text-muted">Vestibulum at eros</li>
+                                </ul>
+                                <a href="form.html" class="btn btn-lg prim mb-5">Start Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h3 class="card-title font-weight-bold  text-uppercase">Free</h3>
+                                <p class="card-text text-muted"><span class="second display-4">$0</span>/month</p>
+                                <ul class="list-unstyled py-3">
+                                    <li class="py-2 text-muted">Cras justo odio</li>
+                                    <li class="py-2 text-muted">Dapibus ac facilisis in</li>
+                                    <li class="py-2 text-muted">Vestibulum at eros</li>
+                                    <li class="py-2 text-muted">Vestibulum at eros</li>
+                                </ul>
+                                <a href="form.html" class="btn btn-lg second mb-5">Start Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12  offset-md-3  offset-lg-0">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h3 class="card-title font-weight-bold text-uppercase">Free</h3>
+                                <p class="card-text text-muted"><span class="prim display-4">$0</span>/month</p>
+                                <ul class="list-unstyled py-3">
+                                    <li class="py-2 text-muted">Cras justo odio</li>
+                                    <li class="py-2 text-muted">Dapibus ac facilisis in</li>
+                                    <li class="py-2 text-muted">Vestibulum at eros</li>
+                                    <li class="py-2 text-muted">Vestibulum at eros</li>
+                                </ul>
+                                <a href="form.html" class="btn btn-lg prim mb-5 ">Start Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- start download section -->
+    <section id="download" class="download">
+        <div class="container mt-5 ">
+            <div class="row">
+
+                <div class="col-lg-6 img-phone-div  d-flex flex-column justify-content-center align-items-center ">
+                    <img src="./img/phones/iphone-chat.png " class="mb-5 img-phone " alt="">
+                </div>
+                <div
+                    class="  col-lg-6 mb-5  d-flex flex-column justify-content-center align-items-center text-center text-lg-left py-5 download__left ">
+                    <h2 class="header-title display-4 ">Free Download Now</h2>
+                    <p class="my-5 text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis,
+                        laborum.</p>
+                    <div class="d-flex justify-content-center app-badge">
+                        <img src="./img/app-badge/app-store.png" class="mr-lg-3 " alt="">
+                        <img src="./img/app-badge/google-play.png" alt="">
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start k-accounts section -->
+    <section id="k-accounts" class="k-accounts text-center py-5">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-3 col-md-6   my-5">
+                    <div class="prim p-5">
+                        <h1 class="font-wight-bold">29K</h1>
+                        <p class="text-uppercase">Active Acccounts</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6  my-5 ">
+                    <div class="prim p-5">
+                        <h1 class="font-wight-bold">70K</h1>
+                        <p class="text-uppercase">Active Acccounts</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6   my-5">
+                    <div class="prim p-5">
+                        <h1 class="font-wight-bold">25K</h1>
+                        <p class="text-uppercase">Active Acccounts</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6  my-5">
+                    <div class="prim p-5">
+                        <h1 class="font-wight-bold">42K</h1>
+                        <p class="text-uppercase">Active Acccounts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- start team section -->
+    <section id="team" class="team text-center mt-5 py-5">
+        <div class="container">
+            <h2 class="display-2 text-center heading-h">Our Happy Customers</h2>
+            <p class="text-center px-5 pb-5 pt-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                corrupti cupiditate laboriosam aspernatur consequuntur nulla incidunt aliquid, similique suscipit
+                molestiae!</p>
+            <div class="row">
+
+                <div class="col-xl-4 col-md-6   my-5">
+                    <div class=" p-5  mx-3 team-box">
+                        <img src="./img/people/member-one.jpg" alt="" class="  rounded-circle">
+                        <h3 class="font-wight-bold text-uppercase mt-5">John Depp</h3>
+                        <p class="mb-5">UI/Ux Design </p>
+                        <div class="progress-cont text-muted  d-flex align-items-center">
+                            <div class=" progress text-muted  mr-4" style="height: 10px; width:95%;">
+                                <div class="progress-bar bg-prim " role="progressbar" style="width: 85%;"></div>
+                            </div>85%
+
+                        </div>
+                        <div class="d-flex justify-content-center my-5 social">
+
+                            <a href="#" class="rounded-circle  mr-3  bg-light text-muted"><i
+                                    class="fab fa-facebook "></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6  my-5 ">
+                    <div class=" p-5  mx-3 team-box">
+                        <img src="./img/people/member-two.jpg" alt="" class=" rounded-circle">
+                        <h3 class="font-wight-bold text-uppercase mt-5">Crist Milio</h3>
+                        <p class="mb-5">Production Designer </p>
+
+                        <div class="progress-cont text-muted  d-flex align-items-center">
+                            <div class=" progress text-muted mr-4" style="height: 10px; width:95%;">
+                                <div class="progress-bar bg-prim " role="progressbar" style="width: 65%;"></div>
+                            </div>65%
+
+                        </div>
+                        <div class="d-flex justify-content-center my-5 social">
+
+                            <a href="#" class="rounded-circle  mr-3  bg-light text-muted"><i
+                                    class="fab fa-facebook "></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-md-6   my-5">
+                    <div class=" p-5 mx-3 team-box">
+                        <img src="./img/people/member-three.jpg" alt="" class=" rounded-circle">
+                        <h3 class="font-wight-bold text-uppercase mt-5">John Doe</h3>
+                        <p class="mb-5">UI Reserch </p>
+
+                        <div class="progress-cont text-muted  d-flex align-items-center">
+                            <div class=" progress text-muted mr-4" style="height: 10px; width:95%;">
+                                <div class="progress-bar bg-prim " role="progressbar" style="width: 95%;"></div>
+                            </div>
+                            95%
+
+                        </div>
+                        <div class="d-flex justify-content-center my-5 social">
+
+                            <a href="#" class="rounded-circle  mr-3  bg-light text-muted"><i
+                                    class="fab fa-facebook "></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 offset-xl-4 col-md-6  my-5">
+                    <div class=" p-5  mx-3 team-box">
+                        <img src="./img/people/member-four.jpg" alt="" class=" rounded-circle">
+                        <h3 class="font-wight-bold text-uppercase mt-5">Mar Gotze</h3>
+                        <p class="mb-5">UI/Ux Design </p>
+
+                        <div class="progress-cont text-muted  d-flex align-items-center">
+                            <div class=" progress text-muted  mr-4" style="height: 10px; width:95%;">
+                                <div class="progress-bar bg-prim " role="progressbar" style="width: 78%;"></div>
+                            </div>78%
+
+                        </div>
+                        <div class="d-flex justify-content-center my-5 social">
+
+                            <a href="#" class="rounded-circle  mr-3  bg-light text-muted"><i
+                                    class="fab fa-facebook "></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="rounded-circle  mr-3 bg-light text-muted"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- start testimonial section -->
+    <section id="testimonial " class="my-5 py-5 testimonial">
+        <div class="container py-5">
+            <h2 class="display-2 text-center text-light heading-h">Our Happy Customers</h2>
+            <p class="text-center px-5 text-light mb-3  pb-5 pt-4  ">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Sunt corrupti cupiditate laboriosam aspernatur consequuntur nulla incidunt aliquid, similique
+                suscipit molestiae!</p>
+            <div class="single-item w-70 margin-auto ">
+                <div class="items p-3">
+                    <div class="row d-flex ">
+                        <div class="col-md-8">
+                            <h2 class="text-uppercase">Kris lazy cistin Miloti</h2>
+                            <span class="text-muted">UI athemefisher</span>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod quibusdam
+                                eum dolor optio illum totam quia debitis at tempore. Vitae, repellendus illo.
+                                Consectetur, numquam?</p>
+                            <div class="d-flex mb-4">
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./img/people/review-person-one.png" class="w-100" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="items p-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="text-uppercase">cistin Miloti Kris lazy </h2>
+                            <span class="text-muted">CEO athemefisher</span>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod quibusdam
+                                eum dolor optio illum totam quia debitis at tempore. Vitae, repellendus illo.
+                                Consectetur, numquam?</p>
+                            <div class="d-flex mb-4">
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./img/people/member-one.jpg" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="items p-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="text-uppercase">Oliver Mate cistin Miloti</h2>
+                            <span class="text-muted">UX athemefisher</span>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod quibusdam
+                                eum dolor optio illum totam quia debitis at tempore. Vitae, repellendus illo.
+                                Consectetur, numquam?</p>
+                            <div class="d-flex mb-4">
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./img/people/member-two.jpg" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="items p-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="text-uppercase">Micheal Tome cistin Miloti</h2>
+                            <span class="text-muted">CEI athemefisher</span>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod quibusdam
+                                eum dolor optio illum totam quia debitis at tempore. Vitae, repellendus illo.
+                                Consectetur, numquam?</p>
+                            <div class="d-flex mb-4">
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./img/people/member-three.jpg" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="items p-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="text-uppercase">John Anton Mate Miloti</h2>
+                            <span class="text-muted">Graphic Designer</span>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod quibusdam
+                                eum dolor optio illum totam quia debitis at tempore. Vitae, repellendus illo.
+                                Consectetur, numquam?</p>
+                            <div class="d-flex mb-4">
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                                <i class="fa fa-star text-warning mr-2"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./img/people/member-four.jpg" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- start subscribe section -->
+    <section id="contact" class="subscribe my-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 d-flex flex-column justify-content-center">
+                    <img src="./img/phones/iphone-banner.png" class="w-100" alt="">
+                </div>
+                <div class="col-md-7 d-flex flex-column justify-content-center text-center text-lg-left pb-5">
+                    <h2 class="display-4 mb-4">Subscribe Our Newsletter</h2>
+                    <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quo
+                        architecto quam, quas rem dolore excepturi quisquam commodi minus optio.</p>
+                    <div class="input-group my-3 input-group-lg ">
+                        <input type="text" class="form-control border-0" placeholder="Recipient's username"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append ">
+                            <span class="input-group-text px-4 py-4 border-0 prim" id="basic-addon2"><i
+                                    class="fa fa-comment-alt text-light "></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start gallery -->
+    <section class="gallery">
+        <div class="container ">
+            <div class="gallery-container">
+                <h2 class="text-uppercase text-center h1 mb-5">Our <div class="parallelogram ml-3  ">Gallery</div>
+                </h2>
+                <div class="images-box">
+                    <div class="row ">
+                        <div class="col-md-6 mb-4">
+                            <img class="w-100 gallery__img " src="./img/phones/ipad_1.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row ">
+                                <div class="col-md-6 mb-4">
+                                    <img class="w-100 h-100 img-fluid" src="./img/phones/ipad-2.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <img class="w-100 h-100" src="./img/phones/ipad_3.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <img class="w-100 h-100" src="./img/phones/ipad_4.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <img class="w-100 h-100" src="./img/phones/ipad_5.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="main-footer py-3" id="mainFooter">
+        <div class="container">
+            <div class="row pt-5  pb-3 d-flex justofy-content-center">
+                <div class="mr-auto mb-3 text-light  footer-social ">
+                    <a href="#home">
+                        <img src="./img/logo.png" class=" mb-4" calt="">
+                    </a>
+
+                    <!-- <h1 class="mb-0 "><a href="#" class="text-light">LIFETRAKER</a></h1>
+            <p class="text-uppercase lead footer-p ">App Landing Page</p> -->
+                </div>
+                <div class="ml-auto align-self-center footer-social mb-4">
+                    <a href="http://www.facebook.com" class="rounded-circle p-3 mr-2  bg-light text-muted"><i
+                            class="fab fa-facebook-square "></i></a>
+                    <a href="http://www.twitter.com" class="rounded-circle p-3 mr-2 bg-light text-muted"><i
+                            class="fab fa-twitter "></i></a>
+                    <a href="http://www.instagram.com" class="rounded-circle p-3 mr-2 bg-light text-muted"><i
+                            class="fab fa-instagram "></i></a>
+                    <a href="http://www.linkedin.com" class="rounded-circle p-3 mr-2 bg-light text-muted"><i
+                            class="fab fa-linkedin "></i></a>
+                </div>
+            </div>
+            <div class="row pb-3">
+                <div class="mr-auto text-light ">
+
+                    <p class="text-uppercase lead">@2020 Reham All Rights Reserved</p>
+                </div>
+                <div class="ml-auto footer-social ">
+                    <a href="#skills" class="rounded-circle p-md-3 mr-md-2 mx-1 text-uppercase  text-light">About</a>
+                    <a href="#team" class="rounded-circle p-md-3 mr-md-2 mx-1 text-uppercase text-light">Team</a>
+                    <a href="#contact" class="rounded-circle p-md-3   text-uppercase text-light">Contact</a>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- query -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+    </script>
+    <!-- lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
