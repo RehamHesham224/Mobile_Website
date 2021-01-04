@@ -25,7 +25,7 @@ $('.single-item').slick({
 });
 window.onload = function() {
   //hide spinner
-  $('.spinner').delay(2000).fadeOut('slow');
+  $('.spinner').delay(1000).fadeOut('slow');
 }
 
 //bootstrap
