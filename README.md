@@ -1,2 +1,2 @@
 # landing-page_
-this repo have an creative fuunctionalities
+this repo have an creative fuunctionalities.
